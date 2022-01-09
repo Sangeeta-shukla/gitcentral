@@ -110,3 +110,12 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+
+│ Error: error creating Route in Route Table (rtb-02d71a9051aefa67d) with destination (10.0.0.0/16): RouteConflict: Route table has a conflicting association with the gateway igw-08f5117e09d1eba27
+│       status code: 400, request id: cdc2d7aa-b1ee-4f14-985f-90aa86b0ca1a
+│
+│   with aws_route.route1,
+│   on provider.tf line 48, in resource "aws_route" "route1":
+│   48: resource "aws_route" "route1" {
+│
